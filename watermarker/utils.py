@@ -4,7 +4,9 @@ Utilities for applying a watermark to an image using PIL.
 Original Source: http://code.activestate.com/recipes/362879/
 """
 
-import Image, ImageEnhance
+from PIL import Image, ImageEnhance
+sys.modules['Image'] = Image
+sys.modules['ImageEnhance'] = ImageEnhance
 import random
 import traceback
 
