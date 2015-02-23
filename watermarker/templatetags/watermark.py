@@ -1,6 +1,8 @@
 from datetime import datetime
 from hashlib import sha1
-import Image
+from PIL import Image, ImageEnhance
+sys.modules['Image'] = Image
+sys.modules['ImageEnhance'] = ImageEnhance
 import errno
 import logging
 import os
