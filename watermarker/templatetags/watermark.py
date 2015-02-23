@@ -1,5 +1,6 @@
 from datetime import datetime
 from hashlib import sha1
+import sys
 from PIL import Image, ImageEnhance
 sys.modules['Image'] = Image
 sys.modules['ImageEnhance'] = ImageEnhance
@@ -7,6 +8,7 @@ import errno
 import logging
 import os
 import traceback
+
 
 from django.conf import settings
 from django import template
